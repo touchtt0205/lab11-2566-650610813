@@ -137,7 +137,7 @@ export default function RegisFormPage() {
       <div>
         <label className="form-label">Plan</label>
         <select
-          className="form-select"
+          className={"form-select"+ (planError ? " is-invalid" : "")}
           onChange={selectPlanOnChange}
           value={plan}
         >
