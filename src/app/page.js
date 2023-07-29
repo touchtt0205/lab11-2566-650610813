@@ -216,12 +216,12 @@ export default function RegisFormPage() {
       <div>
         Total Payment : {computeTotalPayment().toLocaleString()} THB
         {/* Render below element conditionally when user get 20% discount */}
-        {/* <span className="text-success d-block">(20% Discounted)</span> */}
+        {Discount && <span className="text-success d-block">(20% Discounted)</span>}
       </div>
 
       {/* Terms and conditions */}
       <div>
-        <input className="me-2" type="checkbox" />I agree to the terms and
+        <input className="me-2" type="checkbox" onChange={AgreeOnChange} checked={isUserAgreed}/>I agree to the terms and
         conditions
       </div>
 
