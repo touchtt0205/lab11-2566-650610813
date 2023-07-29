@@ -89,7 +89,7 @@ export default function RegisFormPage() {
       setLnameError(true);
     }
 
-    if (fnameOk) {
+    if (fnameOk && lnameOk) {
       alert(
         `Registration complete. Please pay money for ${computeTotalPayment().toLocaleString()} THB.`
       );
